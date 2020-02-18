@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mosn85/circlcinodejs.git"
+    "url": "git+https://github.com/mosn85/aws-nodejs.git"
   },
   "keywords": [
     "circleci"
@@ -16,7 +16,7 @@
   "author": "mohsin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mosn85/circlcinodejs/issues"
+    "url": "https://github.com/mosn85/aws-nodejs/issues"
   },
-  "homepage": "https://github.com/mosn85/circlcinodejs#readme"
+  "homepage": "https://github.com/mosn85/aws-nodejs#readme"
 }
