@@ -19,7 +19,7 @@ jobs:
       - run:
           name: Install Serverless CLI and dependencies
           command: |
-            sudo chown -R $USER /usr/local/lib/node_modules
+            sudo chown -R 777 $USER /usr/local/lib/node_modules
             sudo npm install --save-dev mocha
             npm install
 
