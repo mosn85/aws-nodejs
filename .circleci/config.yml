@@ -19,12 +19,8 @@ jobs:
       - run:
           name: Install Serverless CLI and dependencies
           command: |
-            sudo npm i -g serverless 
-            npm install
-          name: Install Mocha
-          command: |
-            sudo npm i -g mocha 
-            npm install
+            sudo npm install
+         
           
       - save_cache:
           paths:
