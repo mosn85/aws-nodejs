@@ -4,11 +4,15 @@
   "description": "aws-nodejs",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
   "test": "mocha **/*.spec.js" 
+=======
+             "test": "mocha **/*.spec.js" 
+>>>>>>> 3332dd18cd60615dce3539f3123e19aa9a0ab48e
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mosn85/circlcinodejs.git"
+    "url": "git+https://github.com/mosn85/aws-nodejs.git"
   },
   "keywords": [
     "circleci"
@@ -16,7 +20,7 @@
   "author": "mohsin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mosn85/circlcinodejs/issues"
+    "url": "https://github.com/mosn85/aws-nodejs/issues"
   },
-  "homepage": "https://github.com/mosn85/circlcinodejs#readme"
+  "homepage": "https://github.com/mosn85/aws-nodejs#readme"
 }

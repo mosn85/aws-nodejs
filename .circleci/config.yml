@@ -1,4 +1,12 @@
-version: 2
+version: 2.1
+
+workflows:
+   build_and_push_image:
+     jobs:
+      - aws-ecr/build_and_push_image:
+          account-url: AWS_ECR_ACCOUNT_URL_ENV_VAR_NAME
+          context: myContext #if you are using contexts
+          region: AWS_REGION_ENV_VAR_NAME
 jobs:
   build:
     docker:
@@ -20,18 +28,14 @@ jobs:
           name: Install Serverless CLI and dependencies
           command: |
             sudo npm i -g serverless
-            npm install
-
+            sudo npm install
+         
+          
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-
         
-      # run tests!
-      - run: 
-          name: Run tests with coverage
-          command: npm test --coverage
-
       - run:
           name: Deploy application
           command: sls deploy --stage pre
