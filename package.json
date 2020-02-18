@@ -4,7 +4,7 @@
   "description": "aws-nodejs",
   "main": "index.js",
   "scripts": {
-  "test": "mocha **/*.spec.js" 
+             "test": "~/node_modules/mocha/bin/mocha **/*.spec.js" 
   },
   "repository": {
     "type": "git",
