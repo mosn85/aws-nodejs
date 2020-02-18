@@ -1,0 +1,22 @@
+{
+  "name": "aws-nodejs",
+  "version": "1.0.0",
+  "description": "aws-nodejs",
+  "main": "index.js",
+  "scripts": {
+  "test": "./node_modules/.bin/mocha **/*.spec.js" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mosn85/circlcinodejs.git"
+  },
+  "keywords": [
+    "circleci"
+  ],
+  "author": "mohsin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mosn85/circlcinodejs/issues"
+  },
+  "homepage": "https://github.com/mosn85/circlcinodejs#readme"
+}
