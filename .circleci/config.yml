@@ -1,11 +1,5 @@
 version: 2.1
-parameters:
-  aws-region:
-    default: AWS_REGION_ENV_VAR_NAME
-    description: |
-      Env var of AWS region to operate in
-      (defaults to AWS_DEFAULT_REGION)
-    type: env_var_name
+
 jobs:
   build:
     docker:
@@ -23,10 +17,6 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-      - aws-cli/configure:
-          aws-region: << parameters.aws-region >>
-          configure-default-region: << parameters.configure-default-region >>
-      
       - run:
           name: Install Serverless CLI and dependencies
           command: |
@@ -41,4 +31,4 @@ jobs:
         
       - run:
           name: Deploy application
-          command: sls deploy --stage pre
+          command: sls deploy --stage pre --region us-east-2
